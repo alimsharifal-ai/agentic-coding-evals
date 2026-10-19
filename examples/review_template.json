@@ -1,0 +1,11 @@
+{
+  "candidate_sha256": "",
+  "reviewer": "",
+  "instruction_following": {"score": null, "evidence": ""},
+  "maintainability": {"score": null, "evidence": ""},
+  "tool_use": {"score": null, "evidence": ""},
+  "explanation_accuracy": {"score": null, "evidence": ""},
+  "uncovered_risks": [],
+  "pairwise_preference": null,
+  "reasoning": ""
+}

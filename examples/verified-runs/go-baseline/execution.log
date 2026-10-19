@@ -1,0 +1,62 @@
+{"Time":"2026-10-19T06:49:07.690943338-06:00","Action":"start","Package":"example.com/agentic-coding-evals"}
+{"Time":"2026-10-19T06:49:07.692443235-06:00","Action":"run","Package":"example.com/agentic-coding-evals","Test":"TestRetrySequence"}
+{"Time":"2026-10-19T06:49:07.692475012-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestRetrySequence","Output":"=== RUN   TestRetrySequence\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692486449-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestRetrySequence","Output":"    solution_test.go:14: failure 1: got 1, \u003cnil\u003e; want 0\n","OutputType":"error"}
+{"Time":"2026-10-19T06:49:07.692492648-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestRetrySequence","Output":"--- FAIL: TestRetrySequence (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692494681-06:00","Action":"fail","Package":"example.com/agentic-coding-evals","Test":"TestRetrySequence","Elapsed":0}
+{"Time":"2026-10-19T06:49:07.692499068-06:00","Action":"run","Package":"example.com/agentic-coding-evals","Test":"TestRetryCap"}
+{"Time":"2026-10-19T06:49:07.69250072-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestRetryCap","Output":"=== RUN   TestRetryCap\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692503545-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestRetryCap","Output":"--- PASS: TestRetryCap (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692505758-06:00","Action":"pass","Package":"example.com/agentic-coding-evals","Test":"TestRetryCap","Elapsed":0}
+{"Time":"2026-10-19T06:49:07.69250717-06:00","Action":"run","Package":"example.com/agentic-coding-evals","Test":"TestRetryCustomBase"}
+{"Time":"2026-10-19T06:49:07.692508352-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestRetryCustomBase","Output":"=== RUN   TestRetryCustomBase\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692510765-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestRetryCustomBase","Output":"    solution_test.go:29: got 20, \u003cnil\u003e\n","OutputType":"error"}
+{"Time":"2026-10-19T06:49:07.692513589-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestRetryCustomBase","Output":"--- FAIL: TestRetryCustomBase (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692515022-06:00","Action":"fail","Package":"example.com/agentic-coding-evals","Test":"TestRetryCustomBase","Elapsed":0}
+{"Time":"2026-10-19T06:49:07.692516313-06:00","Action":"run","Package":"example.com/agentic-coding-evals","Test":"TestRetryZero"}
+{"Time":"2026-10-19T06:49:07.692517505-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestRetryZero","Output":"=== RUN   TestRetryZero\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692519408-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestRetryZero","Output":"--- PASS: TestRetryZero (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692522192-06:00","Action":"pass","Package":"example.com/agentic-coding-evals","Test":"TestRetryZero","Elapsed":0}
+{"Time":"2026-10-19T06:49:07.692523915-06:00","Action":"run","Package":"example.com/agentic-coding-evals","Test":"TestRetryInvalid"}
+{"Time":"2026-10-19T06:49:07.692525086-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestRetryInvalid","Output":"=== RUN   TestRetryInvalid\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692526799-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestRetryInvalid","Output":"--- PASS: TestRetryInvalid (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692528221-06:00","Action":"pass","Package":"example.com/agentic-coding-evals","Test":"TestRetryInvalid","Elapsed":0}
+{"Time":"2026-10-19T06:49:07.692529563-06:00","Action":"run","Package":"example.com/agentic-coding-evals","Test":"TestRetryHuge"}
+{"Time":"2026-10-19T06:49:07.692530565-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestRetryHuge","Output":"=== RUN   TestRetryHuge\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692532948-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestRetryHuge","Output":"--- PASS: TestRetryHuge (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.69253446-06:00","Action":"pass","Package":"example.com/agentic-coding-evals","Test":"TestRetryHuge","Elapsed":0}
+{"Time":"2026-10-19T06:49:07.692535692-06:00","Action":"run","Package":"example.com/agentic-coding-evals","Test":"TestSessionMissingDelete"}
+{"Time":"2026-10-19T06:49:07.692536804-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionMissingDelete","Output":"=== RUN   TestSessionMissingDelete\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692538947-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionMissingDelete","Output":"--- PASS: TestSessionMissingDelete (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692540459-06:00","Action":"pass","Package":"example.com/agentic-coding-evals","Test":"TestSessionMissingDelete","Elapsed":0}
+{"Time":"2026-10-19T06:49:07.692542392-06:00","Action":"run","Package":"example.com/agentic-coding-evals","Test":"TestSessionExpiry"}
+{"Time":"2026-10-19T06:49:07.692543704-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionExpiry","Output":"=== RUN   TestSessionExpiry\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.69254785-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionExpiry","Output":"    solution_test.go:83: must expire at boundary\n","OutputType":"error"}
+{"Time":"2026-10-19T06:49:07.692549993-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionExpiry","Output":"--- FAIL: TestSessionExpiry (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692551956-06:00","Action":"fail","Package":"example.com/agentic-coding-evals","Test":"TestSessionExpiry","Elapsed":0}
+{"Time":"2026-10-19T06:49:07.692553569-06:00","Action":"run","Package":"example.com/agentic-coding-evals","Test":"TestSessionWriteCopy"}
+{"Time":"2026-10-19T06:49:07.692555201-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionWriteCopy","Output":"=== RUN   TestSessionWriteCopy\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692557364-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionWriteCopy","Output":"    solution_test.go:94: input aliases stored data\n","OutputType":"error"}
+{"Time":"2026-10-19T06:49:07.692560579-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionWriteCopy","Output":"--- FAIL: TestSessionWriteCopy (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692562051-06:00","Action":"fail","Package":"example.com/agentic-coding-evals","Test":"TestSessionWriteCopy","Elapsed":0}
+{"Time":"2026-10-19T06:49:07.692563954-06:00","Action":"run","Package":"example.com/agentic-coding-evals","Test":"TestSessionReadCopy"}
+{"Time":"2026-10-19T06:49:07.692565316-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionReadCopy","Output":"=== RUN   TestSessionReadCopy\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692567259-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionReadCopy","Output":"    solution_test.go:105: output aliases stored data\n","OutputType":"error"}
+{"Time":"2026-10-19T06:49:07.692572196-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionReadCopy","Output":"--- FAIL: TestSessionReadCopy (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692581059-06:00","Action":"fail","Package":"example.com/agentic-coding-evals","Test":"TestSessionReadCopy","Elapsed":0}
+{"Time":"2026-10-19T06:49:07.692583032-06:00","Action":"run","Package":"example.com/agentic-coding-evals","Test":"TestSessionRefresh"}
+{"Time":"2026-10-19T06:49:07.692584414-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionRefresh","Output":"=== RUN   TestSessionRefresh\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692586177-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionRefresh","Output":"--- PASS: TestSessionRefresh (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.69258848-06:00","Action":"pass","Package":"example.com/agentic-coding-evals","Test":"TestSessionRefresh","Elapsed":0}
+{"Time":"2026-10-19T06:49:07.692589973-06:00","Action":"run","Package":"example.com/agentic-coding-evals","Test":"TestSessionInvalid"}
+{"Time":"2026-10-19T06:49:07.692591715-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionInvalid","Output":"=== RUN   TestSessionInvalid\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692603923-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionInvalid","Output":"--- PASS: TestSessionInvalid (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.692610022-06:00","Action":"pass","Package":"example.com/agentic-coding-evals","Test":"TestSessionInvalid","Elapsed":0}
+{"Time":"2026-10-19T06:49:07.692611474-06:00","Action":"run","Package":"example.com/agentic-coding-evals","Test":"TestSessionConcurrent"}
+{"Time":"2026-10-19T06:49:07.692612746-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionConcurrent","Output":"=== RUN   TestSessionConcurrent\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.694033321-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Test":"TestSessionConcurrent","Output":"--- PASS: TestSessionConcurrent (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.694046661-06:00","Action":"pass","Package":"example.com/agentic-coding-evals","Test":"TestSessionConcurrent","Elapsed":0}
+{"Time":"2026-10-19T06:49:07.694049775-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Output":"FAIL\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.694222872-06:00","Action":"output","Package":"example.com/agentic-coding-evals","Output":"FAIL\texample.com/agentic-coding-evals\t0.003s\n","OutputType":"frame"}
+{"Time":"2026-10-19T06:49:07.694241119-06:00","Action":"fail","Package":"example.com/agentic-coding-evals","Elapsed":0.003}
+

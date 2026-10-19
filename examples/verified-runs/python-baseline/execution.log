@@ -1,0 +1,155 @@
+
+test_empty (__main__.MergeChecks.test_empty) ... ok
+test_last_duplicate_replaces_entire_update (__main__.MergeChecks.test_last_duplicate_replaces_entire_update) ... FAIL
+test_nested_values_replace_not_merge (__main__.MergeChecks.test_nested_values_replace_not_merge) ... ok
+test_no_input_mutation_or_alias (__main__.MergeChecks.test_no_input_mutation_or_alias) ... FAIL
+test_none_deletes_and_keeps_empty_user (__main__.MergeChecks.test_none_deletes_and_keeps_empty_user) ... FAIL
+test_order_and_users (__main__.MergeChecks.test_order_and_users) ... FAIL
+test_cap (__main__.RetryChecks.test_cap) ... ok
+test_custom_base (__main__.RetryChecks.test_custom_base) ... FAIL
+test_invalid (__main__.RetryChecks.test_invalid) ... FAIL
+test_large_attempt (__main__.RetryChecks.test_large_attempt) ... ok
+test_sequence (__main__.RetryChecks.test_sequence) ... FAIL
+test_zero (__main__.RetryChecks.test_zero) ... ok
+test_expiry_boundary (__main__.SessionChecks.test_expiry_boundary) ... FAIL
+test_invalid (__main__.SessionChecks.test_invalid) ... FAIL
+test_missing_and_delete (__main__.SessionChecks.test_missing_and_delete) ... ok
+test_read_copy (__main__.SessionChecks.test_read_copy) ... FAIL
+test_refresh (__main__.SessionChecks.test_refresh) ... ok
+test_threaded_distinct_sessions (__main__.SessionChecks.test_threaded_distinct_sessions) ... ok
+test_write_copy (__main__.SessionChecks.test_write_copy) ... FAIL
+
+======================================================================
+FAIL: test_last_duplicate_replaces_entire_update (__main__.MergeChecks.test_last_duplicate_replaces_entire_update)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/coding-eval-b5ed3wh9/checks.py", line 30, in test_last_duplicate_replaces_entire_update
+    self.assertEqual(candidate.merge_updates(rows), {'a': {'name': 'last'}})
+AssertionError: {'a': {'stale': True, 'name': 'last'}} != {'a': {'name': 'last'}}
+- {'a': {'name': 'last', 'stale': True}}
+?                      ---------------
+
++ {'a': {'name': 'last'}}
+
+======================================================================
+FAIL: test_no_input_mutation_or_alias (__main__.MergeChecks.test_no_input_mutation_or_alias)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/coding-eval-b5ed3wh9/checks.py", line 45, in test_no_input_mutation_or_alias
+    self.assertEqual(rows, original)
+AssertionError: Lists differ: [{'user_id': 'a', 'revision': 1, 'changes': {'tags': ['x', 'y']}}] != [{'user_id': 'a', 'revision': 1, 'changes': {'tags': ['x']}}]
+
+First differing element 0:
+{'user_id': 'a', 'revision': 1, 'changes': {'tags': ['x', 'y']}}
+{'user_id': 'a', 'revision': 1, 'changes': {'tags': ['x']}}
+
+- [{'changes': {'tags': ['x', 'y']}, 'revision': 1, 'user_id': 'a'}]
+?                           -----
+
++ [{'changes': {'tags': ['x']}, 'revision': 1, 'user_id': 'a'}]
+
+======================================================================
+FAIL: test_none_deletes_and_keeps_empty_user (__main__.MergeChecks.test_none_deletes_and_keeps_empty_user)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/coding-eval-b5ed3wh9/checks.py", line 37, in test_none_deletes_and_keeps_empty_user
+    self.assertEqual(candidate.merge_updates(rows), {'a': {}})
+AssertionError: {'a': {'name': None, 'missing': None}} != {'a': {}}
+- {'a': {'missing': None, 'name': None}}
++ {'a': {}}
+
+======================================================================
+FAIL: test_order_and_users (__main__.MergeChecks.test_order_and_users)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/coding-eval-b5ed3wh9/checks.py", line 22, in test_order_and_users
+    self.assertEqual(candidate.merge_updates(updates), {
+AssertionError: {'a': {'name': 'old', 'age': 20}, 'b': {'name': 'other'}} != {'a': {'name': 'new', 'age': 20}, 'b': {'name': 'other'}}
+- {'a': {'age': 20, 'name': 'old'}, 'b': {'name': 'other'}}
+?                            ^^^
+
++ {'a': {'age': 20, 'name': 'new'}, 'b': {'name': 'other'}}
+?                            ^^^
+
+
+======================================================================
+FAIL: test_custom_base (__main__.RetryChecks.test_custom_base)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/coding-eval-b5ed3wh9/checks.py", line 63, in test_custom_base
+    self.assertEqual(candidate.retry_delay(3, base=5, cap=100), 10)
+AssertionError: 20 != 10
+
+======================================================================
+FAIL: test_invalid (__main__.RetryChecks.test_invalid)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/coding-eval-b5ed3wh9/checks.py", line 71, in test_invalid
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_sequence (__main__.RetryChecks.test_sequence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/coding-eval-b5ed3wh9/checks.py", line 57, in test_sequence
+    self.assertEqual([candidate.retry_delay(n) for n in range(1, 6)], [0, 1, 2, 4, 8])
+AssertionError: Lists differ: [1, 2, 4, 8, 16] != [0, 1, 2, 4, 8]
+
+First differing element 0:
+1
+0
+
+- [1, 2, 4, 8, 16]
+?            ----
+
++ [0, 1, 2, 4, 8]
+?  +++
+
+
+======================================================================
+FAIL: test_expiry_boundary (__main__.SessionChecks.test_expiry_boundary)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/coding-eval-b5ed3wh9/checks.py", line 98, in test_expiry_boundary
+    self.assertIsNone(self.store.get('a'))
+AssertionError: {'v': 1} is not None
+
+======================================================================
+FAIL: test_invalid (__main__.SessionChecks.test_invalid)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/coding-eval-b5ed3wh9/checks.py", line 120, in test_invalid
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_read_copy (__main__.SessionChecks.test_read_copy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/coding-eval-b5ed3wh9/checks.py", line 109, in test_read_copy
+    self.assertEqual(self.store.get('a'), {'items': [1]})
+AssertionError: {'items': [1, 2]} != {'items': [1]}
+- {'items': [1, 2]}
+?             ---
+
++ {'items': [1]}
+
+======================================================================
+FAIL: test_write_copy (__main__.SessionChecks.test_write_copy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/coding-eval-b5ed3wh9/checks.py", line 104, in test_write_copy
+    self.assertEqual(self.store.get('a'), {'items': [1]})
+AssertionError: {'items': [1, 2]} != {'items': [1]}
+- {'items': [1, 2]}
+?             ---
+
++ {'items': [1]}
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.019s
+
+FAILED (failures=11)

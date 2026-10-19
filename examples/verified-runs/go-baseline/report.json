@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "language": "go",
+  "candidate": "solution.go",
+  "source_sha256": "d1644f526c2ab0820f017a20b321251adf8d2dded43a2ae7ea6465da9fdada88",
+  "created_at": "2026-10-19T12:49:07.696934+00:00",
+  "status": "completed",
+  "returncode": 1,
+  "duration_seconds": 0.225,
+  "passed": 8,
+  "total": 13,
+  "pass_rate": 0.6154,
+  "tests": [
+    {
+      "id": "TestRetrySequence",
+      "status": "fail",
+      "evidence": "=== RUN   TestRetrySequence\n    solution_test.go:14: failure 1: got 1, <nil>; want 0\n--- FAIL: TestRetrySequence (0.00s)\n"
+    },
+    {
+      "id": "TestRetryCap",
+      "status": "pass",
+      "evidence": "=== RUN   TestRetryCap\n--- PASS: TestRetryCap (0.00s)\n"
+    },
+    {
+      "id": "TestRetryCustomBase",
+      "status": "fail",
+      "evidence": "=== RUN   TestRetryCustomBase\n    solution_test.go:29: got 20, <nil>\n--- FAIL: TestRetryCustomBase (0.00s)\n"
+    },
+    {
+      "id": "TestRetryZero",
+      "status": "pass",
+      "evidence": "=== RUN   TestRetryZero\n--- PASS: TestRetryZero (0.00s)\n"
+    },
+    {
+      "id": "TestRetryInvalid",
+      "status": "pass",
+      "evidence": "=== RUN   TestRetryInvalid\n--- PASS: TestRetryInvalid (0.00s)\n"
+    },
+    {
+      "id": "TestRetryHuge",
+      "status": "pass",
+      "evidence": "=== RUN   TestRetryHuge\n--- PASS: TestRetryHuge (0.00s)\n"
+    },
+    {
+      "id": "TestSessionMissingDelete",
+      "status": "pass",
+      "evidence": "=== RUN   TestSessionMissingDelete\n--- PASS: TestSessionMissingDelete (0.00s)\n"
+    },
+    {
+      "id": "TestSessionExpiry",
+      "status": "fail",
+      "evidence": "=== RUN   TestSessionExpiry\n    solution_test.go:83: must expire at boundary\n--- FAIL: TestSessionExpiry (0.00s)\n"
+    },
+    {
+      "id": "TestSessionWriteCopy",
+      "status": "fail",
+      "evidence": "=== RUN   TestSessionWriteCopy\n    solution_test.go:94: input aliases stored data\n--- FAIL: TestSessionWriteCopy (0.00s)\n"
+    },
+    {
+      "id": "TestSessionReadCopy",
+      "status": "fail",
+      "evidence": "=== RUN   TestSessionReadCopy\n    solution_test.go:105: output aliases stored data\n--- FAIL: TestSessionReadCopy (0.00s)\n"
+    },
+    {
+      "id": "TestSessionRefresh",
+      "status": "pass",
+      "evidence": "=== RUN   TestSessionRefresh\n--- PASS: TestSessionRefresh (0.00s)\n"
+    },
+    {
+      "id": "TestSessionInvalid",
+      "status": "pass",
+      "evidence": "=== RUN   TestSessionInvalid\n--- PASS: TestSessionInvalid (0.00s)\n"
+    },
+    {
+      "id": "TestSessionConcurrent",
+      "status": "pass",
+      "evidence": "=== RUN   TestSessionConcurrent\n--- PASS: TestSessionConcurrent (0.00s)\n"
+    }
+  ],
+  "human_review": {
+    "instruction_following": {
+      "score": null,
+      "evidence": ""
+    },
+    "maintainability": {
+      "score": null,
+      "evidence": ""
+    },
+    "tool_use": {
+      "score": null,
+      "evidence": ""
+    },
+    "explanation_accuracy": {
+      "score": null,
+      "evidence": ""
+    }
+  }
+}

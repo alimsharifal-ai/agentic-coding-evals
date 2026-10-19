@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "language": "python",
+  "candidate": "solution.py",
+  "source_sha256": "fce4ee3407c57f4fc22e0605bd922e67c68e3e57ff6c3fd9fc2a764000a24f4b",
+  "created_at": "2026-10-19T12:47:25.724564+00:00",
+  "status": "completed",
+  "returncode": 0,
+  "duration_seconds": 0.072,
+  "passed": 19,
+  "total": 19,
+  "pass_rate": 1.0,
+  "tests": [
+    {
+      "id": "__main__.MergeChecks.test_empty",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.MergeChecks.test_last_duplicate_replaces_entire_update",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.MergeChecks.test_nested_values_replace_not_merge",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.MergeChecks.test_no_input_mutation_or_alias",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.MergeChecks.test_none_deletes_and_keeps_empty_user",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.MergeChecks.test_order_and_users",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.RetryChecks.test_cap",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.RetryChecks.test_custom_base",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.RetryChecks.test_invalid",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.RetryChecks.test_large_attempt",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.RetryChecks.test_sequence",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.RetryChecks.test_zero",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.SessionChecks.test_expiry_boundary",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.SessionChecks.test_invalid",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.SessionChecks.test_missing_and_delete",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.SessionChecks.test_read_copy",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.SessionChecks.test_refresh",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.SessionChecks.test_threaded_distinct_sessions",
+      "status": "pass"
+    },
+    {
+      "id": "__main__.SessionChecks.test_write_copy",
+      "status": "pass"
+    }
+  ],
+  "human_review": {
+    "instruction_following": {
+      "score": null,
+      "evidence": ""
+    },
+    "maintainability": {
+      "score": null,
+      "evidence": ""
+    },
+    "tool_use": {
+      "score": null,
+      "evidence": ""
+    },
+    "explanation_accuracy": {
+      "score": null,
+      "evidence": ""
+    }
+  }
+}

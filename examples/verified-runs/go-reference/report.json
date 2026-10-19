@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "language": "go",
+  "candidate": "solution.go",
+  "source_sha256": "5968921b66b83be17a0005cb484a5c88f78027c39a4e5d36c8cfa45e4d4b0e9a",
+  "created_at": "2026-10-19T12:48:55.809523+00:00",
+  "status": "completed",
+  "returncode": 0,
+  "duration_seconds": 5.339,
+  "passed": 13,
+  "total": 13,
+  "pass_rate": 1.0,
+  "tests": [
+    {
+      "id": "TestRetrySequence",
+      "status": "pass",
+      "evidence": "=== RUN   TestRetrySequence\n--- PASS: TestRetrySequence (0.00s)\n"
+    },
+    {
+      "id": "TestRetryCap",
+      "status": "pass",
+      "evidence": "=== RUN   TestRetryCap\n--- PASS: TestRetryCap (0.00s)\n"
+    },
+    {
+      "id": "TestRetryCustomBase",
+      "status": "pass",
+      "evidence": "=== RUN   TestRetryCustomBase\n--- PASS: TestRetryCustomBase (0.00s)\n"
+    },
+    {
+      "id": "TestRetryZero",
+      "status": "pass",
+      "evidence": "=== RUN   TestRetryZero\n--- PASS: TestRetryZero (0.00s)\n"
+    },
+    {
+      "id": "TestRetryInvalid",
+      "status": "pass",
+      "evidence": "=== RUN   TestRetryInvalid\n--- PASS: TestRetryInvalid (0.00s)\n"
+    },
+    {
+      "id": "TestRetryHuge",
+      "status": "pass",
+      "evidence": "=== RUN   TestRetryHuge\n--- PASS: TestRetryHuge (0.00s)\n"
+    },
+    {
+      "id": "TestSessionMissingDelete",
+      "status": "pass",
+      "evidence": "=== RUN   TestSessionMissingDelete\n--- PASS: TestSessionMissingDelete (0.00s)\n"
+    },
+    {
+      "id": "TestSessionExpiry",
+      "status": "pass",
+      "evidence": "=== RUN   TestSessionExpiry\n--- PASS: TestSessionExpiry (0.00s)\n"
+    },
+    {
+      "id": "TestSessionWriteCopy",
+      "status": "pass",
+      "evidence": "=== RUN   TestSessionWriteCopy\n--- PASS: TestSessionWriteCopy (0.00s)\n"
+    },
+    {
+      "id": "TestSessionReadCopy",
+      "status": "pass",
+      "evidence": "=== RUN   TestSessionReadCopy\n--- PASS: TestSessionReadCopy (0.00s)\n"
+    },
+    {
+      "id": "TestSessionRefresh",
+      "status": "pass",
+      "evidence": "=== RUN   TestSessionRefresh\n--- PASS: TestSessionRefresh (0.00s)\n"
+    },
+    {
+      "id": "TestSessionInvalid",
+      "status": "pass",
+      "evidence": "=== RUN   TestSessionInvalid\n--- PASS: TestSessionInvalid (0.00s)\n"
+    },
+    {
+      "id": "TestSessionConcurrent",
+      "status": "pass",
+      "evidence": "=== RUN   TestSessionConcurrent\n--- PASS: TestSessionConcurrent (0.00s)\n"
+    }
+  ],
+  "human_review": {
+    "instruction_following": {
+      "score": null,
+      "evidence": ""
+    },
+    "maintainability": {
+      "score": null,
+      "evidence": ""
+    },
+    "tool_use": {
+      "score": null,
+      "evidence": ""
+    },
+    "explanation_accuracy": {
+      "score": null,
+      "evidence": ""
+    }
+  }
+}

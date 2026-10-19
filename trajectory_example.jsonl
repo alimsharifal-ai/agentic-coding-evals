@@ -1,0 +1,4 @@
+{"synthetic":true,"step":1,"type":"read","description":"Illustrative event: inspect task requirements and candidate source."}
+{"synthetic":true,"step":2,"type":"test","description":"Illustrative event: reproduce a session expiry boundary failure."}
+{"synthetic":true,"step":3,"type":"edit","description":"Illustrative event: adjust the expiry comparison and copy stored values."}
+{"synthetic":true,"step":4,"type":"verify","description":"Illustrative event: run all checks and summarize observed results."}
